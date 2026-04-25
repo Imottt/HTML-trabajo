@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumate al Club de Soda</title>
+</head>
+<body>
+
+    <header>
+        <h1>Grupo de fans de Soda Stereo</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info.html">Información</a></li>
+                <li><a href="contacto.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="soda-intro">
+            <h2>Sumate a la red de Soda Stereo</h2>
+            <p>Soda Stereo fue una banda formada por Gustavo Cerati, Zeta Bosio y Charly Alberti. Son los mas grandes del rock de aca y queremos que todos los fans esten juntos en este sitio web.</p>
+            <p>Si te gusta Cancion Animal, Signos o Doble Vida, tenes que completar este formulario para que te avisemos de novedades.</p>
+        </section>
+
+        <form method="POST" action="">
+
+            <p><strong>Datos para el Club:</strong></p>
+
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <p>
+                <label for="correo">Tu Mail:</label><br>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+
+            <p>
+                <label for="pass">Contraseña:</label><br>
+                <input type="password" id="pass" name="pass">
+            </p>
+
+            <p>
+                <label for="disco">¿Cual es tu disco favorito de Soda?</label>
+                <select id="disco" name="disco">
+                    <option value="nada">Nada Personal</option>
+                    <option value="signos">Signos</option>
+                    <option value="animal">Canción Animal</option>
+                    <option value="dynamo">Dynamo</option>
+                </select>
+            </p>
+
+            <p>¿Tenes algun poster o remera de la banda?</p>
+            <input type="radio" id="si" name="fan" value="si">
+            <label for="si"> si tengo</label>
+            <input type="radio" id="no" name="fan" value="no">
+            <label for="no">No por ahora no</label>
+
+            <p>
+                <input type="checkbox" id="novedades" name="novedades">
+                <label for="novedades">Acepto recibir mails de la banda</label>
+            </p>
+
+            <br>
+            <input type="submit" value="Enviar Registro">
+            <input type="reset" value="Borrar">
+
+        </form>
+    </main>
+
+
+</body>
+<p>
+</html>
